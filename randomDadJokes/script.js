@@ -2,7 +2,7 @@ window.addEventListener('load',()=>{
     const jokeEl = document.getElementById('joke');
     const jokeBtn = document.getElementById('get_joke');
     const tag = document.getElementById('tag');
-    var apis = [generateDadJoke,generateNorrisJoke,generateGithubJoke]
+    var apis = [generateDadJoke,generateNorrisJoke,generateGithubJoke,generateGeekJoke]
 
     jokeBtn.addEventListener('click',()=>{
         let pick = Math.floor(Math.random()*(apis.length));
@@ -43,6 +43,14 @@ window.addEventListener('load',()=>{
         const joke = await jokeFromAPI.json();
         jokeEl.textContent = joke.setup +" " + joke.punchline;
         tag.textContent="[Random Jokes]";
+
+    };
+    async function generateGeekJoke(){
+        console.log('starting fetch');
+        const jokeFromAPI = await fetch('https://geek-jokes.sameerkumar.website/api?format=json');
+        const joke = await jokeFromAPI.json();
+        jokeEl.textContent = joke.joke;
+        tag.textContent="[Geek Jokes]";
 
     };
 
