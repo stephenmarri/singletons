@@ -123,6 +123,22 @@ option{
     body {
       font-size: 10px;
     }
+    .main-container{
+        width: 95%;
+        height: 35%;
+    }
+
+    .main-container .option__wrapper #check{
+        text-align: center;
+        margin: 0;
+    }
+    #check, .option__wrapper #math_function{
+        width: 40%;
+    }
+    .option__wrapper #math_function{
+        width: 50%;
+        height: 75%;
+    }
 
   }
 /* media queries */
