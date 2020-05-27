@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Functions</title>
+</head>
+<body>
+    <div class="wrapper flex-row">
+        <div class="main-container flex-col">
+            <input type="number" name="user_input" id="user_input" placeholder="Enter a number..." class="noOutline">
+            <div class="option__wrapper flex-row">
+                <p id="header"><div id="check">Check</div> <span id="remove">if number is:</span> </p>
+                <select name="math_function" id="math_function">            
+                    <option value="isPrime">Prime</option>
+                    <option value="isPalindrome">Palindrome</option>
+                    <option value="isFibonacci">Fibonnaci</option>
+                </select>
+            </div>
+            <div id="result" class="flex-row" ><i id="resutl_i" style="color: black;"></i></div>
+            <div class="reset_wrapper flex-row">
+                <div id="reset"><u>reset</u></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
